@@ -1,2 +1,1 @@
-const item=document.querySelectorAll('#categories.item');
-item.forEach(item=>console.log(item));
+const allCat = document.querySelectorAll('.item h2').forEach(cat =>console.log(`Категория: ${cat.textContent}, Количестко элементов: ${cat.nextElementSibling.children.length}`));
